@@ -1,2 +1,2 @@
-cd Ultraviolet-App
+cd Ultraviolet-app
 npm start
