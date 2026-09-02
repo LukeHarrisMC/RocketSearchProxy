@@ -20,7 +20,7 @@ bash run.sh
 ## Method 2: Manual
 Step 1. Run the command below
 ``` Shell
-cd Ultraviolet-App
+cd Ultraviolet-app
 ```
 Step 2. Then run this command to install Node Package Manager
 ``` Shell
