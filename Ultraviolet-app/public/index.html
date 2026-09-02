@@ -1,33 +1,30 @@
 <!doctype html>
-<html lang="en">
+<html>
 	<head>
 		<meta charset="utf-8" />
 		<meta
 			name="viewport"
 			content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
 		/>
-
-		<title>RocketSearch | Web Proxy</title>
-
+		<title>Ultraviolet | Sophisticated Web Proxy</title>
 		<meta
 			name="description"
-			content="RocketSearch is a sophisticated web proxy for accessing websites in a controlled sandbox using service workers."
+			content="Ultraviolet is a highly sophisticated proxy used for evading internet censorship or accessing websites in a controlled sandbox using the power of service-workers. Unblock sites today!"
 		/>
 		<meta
 			name="keywords"
-			content="RocketSearch, web proxy, Ultraviolet, service workers, TitaniumNetwork"
+			content="proxy, web proxy, ultraviolet, service workers, unblock websites, unblock chromebook, free web proxy, proxy list, proxy sites, un block chromebook, online proxy, proxy server, proxysite, proxy youtube, bypass securly, bypass iboss, bypass lightspeed filter, holy unblocker, chromebooks, titanium network, unblock youtube, youtube proxy, unblocked youtube, youtube unblocked"
 		/>
 		<meta
 			name="theme-color"
 			media="(prefers-color-scheme: dark)"
-			content="#070b1f
-"
+			content="#434c5e"
 		/>
-
-		<link rel="shortcut icon" href="favicon.ico" />
+		<meta name="googlebot" content="index, follow, snippet" />
+		<link rel="shortcut icon" content="favicon.ico" />
 		<link rel="stylesheet" href="index.css" />
+		
 
-		<!-- Ultraviolet integration dependencies. Keep these paths and order unchanged. -->
 		<script src="baremux/index.js"></script>
 		<script src="uv/uv.bundle.js"></script>
 		<script src="uv/uv.config.js"></script>
@@ -39,26 +36,26 @@
 				"mainEntity": [
 					{
 						"@type": "Question",
-						"name": "What is RocketSearch?",
+						"name": "What is Ultraviolet (Web Proxy)?",
 						"acceptedAnswer": {
 							"@type": "Answer",
-							"text": "RocketSearch is a sophisticated web proxy that accesses websites in a controlled sandbox using service workers."
+							"text": "Highly sophisticated proxy used for evading internet censorship or accessing websites in a controlled sandbox using the power of service-workers and more!"
 						}
 					},
 					{
 						"@type": "Question",
-						"name": "How do I search using RocketSearch?",
+						"name": "How do I unblock sites using Ultraviolet?",
 						"acceptedAnswer": {
 							"@type": "Answer",
-							"text": "Enter a search term or website address into the RocketSearch launch bar."
+							"text": "Simply head to an official site featuring Ultraviolet such as Holy Unblocker or Incognito! You can also self-host Ultraviolet on your own web server for maximum privacy."
 						}
 					},
 					{
 						"@type": "Question",
-						"name": "What powers RocketSearch?",
+						"name": "What if Ultraviolet is blocked or not working?",
 						"acceptedAnswer": {
 							"@type": "Answer",
-							"text": "RocketSearch is powered by Ultraviolet and the TitaniumNetwork ecosystem."
+							"text": "Join the Titanium Network Discord at discord.gg/unblock!"
 						}
 					}
 				]
@@ -67,142 +64,61 @@
 	</head>
 
 	<body>
-		<div class="arena-glow arena-glow-blue"></div>
-		<div class="arena-glow arena-glow-orange"></div>
-		<div class="speed-lines"></div>
+		<div
+			title="Ultraviolet Logo"
+			class="flex-center logo-wrapper header-center"
+		>
+			<img class="logo" src="uv.png" alt="Ultraviolet" />
+			<h1>Ultraviolet | TN</h1>
+		</div>
+		<div class="flex-center desc left-margin">
+			<p>
+				Ultraviolet is highly sophisticated proxy used for evading internet
+				censorship.
+			</p>
+		</div>
 
-		<main class="landing-shell">
-			<section class="hero" aria-labelledby="rocketsearch-title">
-				<div class="brand-lockup">
-					<div class="rocket-mark" aria-hidden="true">
-						<span></span>
-					</div>
-
-					<div>
-						<p class="eyebrow">AERIAL WEB ACCESS</p>
-						<h1 id="rocketsearch-title">
-							<span>Rocket</span>Search
-						</h1>
-					</div>
-				</div>
-
-				<p class="hero-description">
-					A high-speed web proxy for exploring the internet through a
-					controlled sandbox.
-				</p>
-
-				<div class="status-row" aria-label="RocketSearch status">
-					<span class="status-dot"></span>
-					<span>Launch systems online</span>
-					<span class="status-divider"></span>
-					<span>Powered by Ultraviolet</span>
-				</div>
-
-				<!-- Keep these IDs and the form structure unchanged for search.js/index.js. -->
-				<form id="uv-form" class="search-launcher">
-					<input
-						id="uv-search-engine"
-						value="https://www.google.com/search?q=%s"
-						type="hidden"
-					/>
-
-					<label class="sr-only" for="uv-address">
-						Search the web freely
-					</label>
-
-					<div class="search-input-wrap">
-						<span class="search-icon" aria-hidden="true">⌕</span>
-
-						<input
-							id="uv-address"
-							type="text"
-							placeholder="Search the web freely"
-							autocomplete="off"
-							spellcheck="false"
-						/>
-
-						<button type="submit" class="launch-button">
-							<span>Launch</span>
-							<span class="launch-arrow" aria-hidden="true">↗</span>
-						</button>
-					</div>
-				</form>
-
-				<div class="boost-meter" aria-hidden="true">
-					<div class="boost-label">
-						<span>BOOST</span>
-						<span>100</span>
-					</div>
-					<div class="boost-track">
-						<span></span>
-						<span></span>
-						<span></span>
-						<span></span>
-						<span></span>
-						<span></span>
-						<span></span>
-						<span></span>
-					</div>
-				</div>
-
-				<div class="error-area">
-					<p id="uv-error"></p>
-					<pre id="uv-error-code"></pre>
-				</div>
-			</section>
-
-			<footer>
-				<div class="footer-links">
-					<a
-						title="The TitaniumNetwork GitHub organization"
-						href="https://github.com/titaniumnetwork-dev"
-						>TitaniumNetwork</a
-					>
-
-					<a
-						title="The TitaniumNetwork Discord"
-						href="https://discord.gg/unblock"
-						>Discord</a
-					>
-
-					<a
-						title="The TompHTTP GitHub organization"
-						href="https://github.com/tomphttp"
-						>TompHTTP</a
-					>
-
-					<a
-						title="The official deployment repository for Ultraviolet"
-						href="https://github.com/titaniumnetwork-dev/Ultraviolet-App"
-						>GitHub</a
-					>
-
-					<a title="License information" href="credits.html">
-						Credits
-					</a>
-				</div>
-
-				<div class="footer-meta">
-					<span>RocketSearch</span>
-					<span class="footer-divider">/</span>
-					<span>Powered by Ultraviolet &amp; TitaniumNetwork</span>
-					<span class="footer-divider">/</span>
-					<span>Ultraviolet &copy; TN 2023</span>
-				</div>
-			</footer>
-		</main>
-
-		<!-- Required by Ultraviolet navigation behavior. -->
-		<iframe
-			style="display: none"
-			id="uv-frame"
-			title="RocketSearch browsing frame"
-		></iframe>
-
-		<!-- Keep these scripts and their order unchanged. -->
+		<form id="uv-form" class="flex-center">
+			<input
+				id="uv-search-engine"
+				value="https://www.google.com/search?q=%s"
+				type="hidden"
+			/>
+			<input id="uv-address" type="text" placeholder="Search the web freely" />
+		</form>
+		<div class="desc left-margin">
+			<p id="uv-error"></p>
+			<pre id="uv-error-code"></pre>
+		</div>
+		<footer>
+			<div>
+				<a
+					title="The TitaniumNetwork GitHub organization"
+					href="https://github.com/titaniumnetwork-dev"
+					>TitaniumNetwork</a
+				>
+				<a title="The TitaniumNetwork Discord" href="https://discord.gg/unblock"
+					>Discord</a
+				>
+				<a
+					title="The TompHTTP GitHub organization"
+					href="https://github.com/tomphttp"
+					>TompHTTP</a
+				>
+				<a
+					title="The official deployment repository for Ultraviolet"
+					href="https://github.com/titaniumnetwork-dev/Ultraviolet-App"
+					>GitHub</a
+				>
+				<a title="License information" href="credits.html">Credits</a>
+			</div>
+			<div>
+				<span>Ultraviolet &copy; TN 2023</span>
+			</div>
+		</footer>
+		<iframe style="display: none" id="uv-frame"></iframe>
 		<script src="register-sw.js"></script>
 		<script src="search.js"></script>
 		<script src="index.js"></script>
 	</body>
 </html>
-
